@@ -71,8 +71,8 @@ alert(wynik);
 <hr>
 <script language="JavaScript">
 function BMI(){
-var skl1=parseFloat(document.BMI.a.value);
-var skl2=parseFloat(document.BMI.a.value);
+var skl1=parseFloat(document.BMI.Wzrost.value);
+var skl2=parseFloat(document.BMI.Waga.value);
 var wynik=skl2/(skl1*skl1);
 if(wynik<18.5){
 alert(wynik" niedowaga")
@@ -85,8 +85,8 @@ if(wynik>=25){
 }
 </script>
 <form name="BMI">
-a=<input type="text" name="Wzrost"><br>
-b=<input type="text" name="Waga"><br>
+Wzrost=<input type="text" name="Wzrost"><br>
+Waga=<input type="text" name="Waga"><br>
 <input type="Button" value="Oblicz BMI" onclick="BMI()">
 </form>
 
@@ -125,5 +125,6 @@ Wybierz przedmiot:<br>
 
 </body>
 </html>
+
 
 
