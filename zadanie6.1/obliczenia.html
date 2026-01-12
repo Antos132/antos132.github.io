@@ -1,0 +1,122 @@
+<html>
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=ISO-8859-2" />  
+  <title>[ Tytul dokumentu ]</title>
+</head>
+<body>
+<script language="JavaScript">
+
+function dodawanie() {
+/* Odwołanie do formularza i jego elementów przez nazwę*/
+var skl1=parseFloat(document.Form.a.value);
+var skl2=parseFloat(document.Form.b.value);
+var wynik = skl1+skl2;
+alert(wynik);
+}
+</script>
+
+<form name="Form">
+a=<input type="Text" name="a"><br>
+b=<input type="Text" name="b"><br>
+<input type="Button" value="Oblicz sumę" onclick="dodawanie()">
+</form>
+<hr>
+
+<script language="JavaScript">
+function odejmowanie() {
+/* Odwołanie do formularza i jego elementów przez indeks
+Formularz o nazwie jakas_wymyslona_nazwa1 jest drugim formularzem w dokumencie więc ma indeks równy 1
+Pole tekstowe o nazwie jakas_wymyslona_nazwa2 jest pierwszym elementem formularza więc ma indeks równy 0
+*/
+var skl1=parseFloat(document.forms[1].elements[0].value);
+var skl2=parseFloat(document.forms[1].elements[1].value);
+var wynik = skl1-skl2;
+alert(wynik);
+}
+</script>
+
+<form name="jakas_wymyslona_nazwa1">
+a=<input type="Text" name="jakas_wymyslona_nazwa2"><br>
+b=<input type="Text" name="jakas_wymyslona_nazwa3"><br>
+<input type="Button" value="Oblicz różnicę" onclick="odejmowanie()">
+</form>
+<hr>
+
+<script language="JavaScript">
+
+function mnozenie() {
+/* Odwołanie do formularza i jego elementów przez nazwę*/
+var skl1=parseFloat(document.test.a.value);
+var skl2=parseFloat(document.test.b.value);
+var wynik = skl1*skl2;
+alert(wynik);
+}
+</script>
+
+<form name="test">
+a=<input type="Text" name="a"><br>
+b=<input type="Text" name="b"><br>
+<input type="Button" value="Wymnóż" onclick="mnozenie()">
+</form>
+<hr>
+<script language="JavaScript">
+function dziel() {
+/* Odwołanie do formularza i jego elementów przez nazwę*/
+var skl1=parseFloat(document.adam.a.value);
+var skl2=parseFloat(document.adam.b.value);
+var wynik = skl1/skl2;
+alert(wynik);
+}
+</script>
+<hr>
+<script language="JavaScript">
+function BMI(){
+var skl1=parseFloat(document.BMI.a.value);
+var skl2=parseFloat(document.BMI.a.value);
+var wynik=skl2/(skl1*skl1);
+if(wynik<18.5){
+alert(wynik" niedowaga")
+}
+if(wynik>18.5 && 
+</script>
+<form name="BMI">
+a=<input type="text" name="Wzrost"><br>
+b=<input type="text" name="Waga"><br>
+<input type="Button" value="Oblicz BMI" onclick="BMI()">
+</form>
+
+<form name="adam">
+a=<input type="Text" name="a"><br>
+b=<input type="Text" name="b"><br>
+<input type="Button" value="Podziel" onclick="dziel()">
+</form>
+<hr>
+<form>
+Podaj imie: <input type="text" name="imie">
+<br>
+Podaj hasło: <input type="password" name="hasło">
+<br>
+Podaj ulubione ppotrawy:<br>
+<input type="checkbox" name="potrawy" value="wartość" checked>Kotlet schabowy <br>
+<input type="checkbox" name="potrawy" value="wartość">Paprykarz <br>
+<input type="checkbox" name="potrawy" value="wartość" checked>Kotlet mielony <br>
+<br>
+Wybierz kolor:<br>
+<input type="radio" name="kolory" value="wartość">zielony <br>
+<input type="radio" name="kolory" value="wartość">czerwony <br>
+<input type="radio" name="kolory" value="wartość">czarny <br>
+<br>
+Wybierz przedmiot:<br>
+<select name="przedmioty">
+	<option>informatyka</option>
+	<option>matematyka</option>
+	<option>fizyka</option>
+</select>
+<br>
+<input type="Button" value="Wyślij">
+
+
+</form>
+
+</body>
+</html>
