@@ -7,7 +7,7 @@
 <script language="JavaScript">
 
 function dodawanie() {
-/* Odwo³anie do formularza i jego elementów przez nazwê*/
+/* OdwoÂ³anie do formularza i jego elementÃ³w przez nazwÃª*/
 var skl1=parseFloat(document.Form.a.value);
 var skl2=parseFloat(document.Form.b.value);
 var wynik = skl1+skl2;
@@ -18,15 +18,15 @@ alert(wynik);
 <form name="Form">
 a=<input type="Text" name="a"><br>
 b=<input type="Text" name="b"><br>
-<input type="Button" value="Oblicz sumê" onclick="dodawanie()">
+<input type="Button" value="Oblicz sumÃª" onclick="dodawanie()">
 </form>
 <hr>
 
 <script language="JavaScript">
 function odejmowanie() {
-/* Odwo³anie do formularza i jego elementów przez indeks
-Formularz o nazwie jakas_wymyslona_nazwa1 jest drugim formularzem w dokumencie wiêc ma indeks równy 1
-Pole tekstowe o nazwie jakas_wymyslona_nazwa2 jest pierwszym elementem formularza wiêc ma indeks równy 0
+/* OdwoÂ³anie do formularza i jego elementÃ³w przez indeks
+Formularz o nazwie jakas_wymyslona_nazwa1 jest drugim formularzem w dokumencie wiÃªc ma indeks rÃ³wny 1
+Pole tekstowe o nazwie jakas_wymyslona_nazwa2 jest pierwszym elementem formularza wiÃªc ma indeks rÃ³wny 0
 */
 var skl1=parseFloat(document.forms[1].elements[0].value);
 var skl2=parseFloat(document.forms[1].elements[1].value);
@@ -38,14 +38,14 @@ alert(wynik);
 <form name="jakas_wymyslona_nazwa1">
 a=<input type="Text" name="jakas_wymyslona_nazwa2"><br>
 b=<input type="Text" name="jakas_wymyslona_nazwa3"><br>
-<input type="Button" value="Oblicz ró¿nicê" onclick="odejmowanie()">
+<input type="Button" value="Oblicz rÃ³Â¿nicÃª" onclick="odejmowanie()">
 </form>
 <hr>
 
 <script language="JavaScript">
 
 function mnozenie() {
-/* Odwo³anie do formularza i jego elementów przez nazwê*/
+/* OdwoÂ³anie do formularza i jego elementÃ³w przez nazwÃª*/
 var skl1=parseFloat(document.test.a.value);
 var skl2=parseFloat(document.test.b.value);
 var wynik = skl1*skl2;
@@ -56,12 +56,12 @@ alert(wynik);
 <form name="test">
 a=<input type="Text" name="a"><br>
 b=<input type="Text" name="b"><br>
-<input type="Button" value="Wymnó¿" onclick="mnozenie()">
+<input type="Button" value="WymnÃ³Â¿" onclick="mnozenie()">
 </form>
 <hr>
 <script language="JavaScript">
 function dziel() {
-/* Odwo³anie do formularza i jego elementów przez nazwê*/
+/* OdwoÂ³anie do formularza i jego elementÃ³w przez nazwÃª*/
 var skl1=parseFloat(document.adam.a.value);
 var skl2=parseFloat(document.adam.b.value);
 var wynik = skl1/skl2;
@@ -77,7 +77,12 @@ var wynik=skl2/(skl1*skl1);
 if(wynik<18.5){
 alert(wynik" niedowaga")
 }
-if(wynik>18.5 && 
+if(wynik>=18.5 && wynik<=24.9){
+	alert(wynik" prawidÅ‚owa masa ciaÅ‚a")
+}
+if(wynik>=25){
+	alert(wynik" nadwaga")
+}
 </script>
 <form name="BMI">
 a=<input type="text" name="Wzrost"><br>
@@ -94,17 +99,17 @@ b=<input type="Text" name="b"><br>
 <form>
 Podaj imie: <input type="text" name="imie">
 <br>
-Podaj has³o: <input type="password" name="has³o">
+Podaj hasÂ³o: <input type="password" name="hasÂ³o">
 <br>
 Podaj ulubione ppotrawy:<br>
-<input type="checkbox" name="potrawy" value="warto¶æ" checked>Kotlet schabowy <br>
-<input type="checkbox" name="potrawy" value="warto¶æ">Paprykarz <br>
-<input type="checkbox" name="potrawy" value="warto¶æ" checked>Kotlet mielony <br>
+<input type="checkbox" name="potrawy" value="wartoÂ¶Ã¦" checked>Kotlet schabowy <br>
+<input type="checkbox" name="potrawy" value="wartoÂ¶Ã¦">Paprykarz <br>
+<input type="checkbox" name="potrawy" value="wartoÂ¶Ã¦" checked>Kotlet mielony <br>
 <br>
 Wybierz kolor:<br>
-<input type="radio" name="kolory" value="warto¶æ">zielony <br>
-<input type="radio" name="kolory" value="warto¶æ">czerwony <br>
-<input type="radio" name="kolory" value="warto¶æ">czarny <br>
+<input type="radio" name="kolory" value="wartoÂ¶Ã¦">zielony <br>
+<input type="radio" name="kolory" value="wartoÂ¶Ã¦">czerwony <br>
+<input type="radio" name="kolory" value="wartoÂ¶Ã¦">czarny <br>
 <br>
 Wybierz przedmiot:<br>
 <select name="przedmioty">
@@ -113,10 +118,11 @@ Wybierz przedmiot:<br>
 	<option>fizyka</option>
 </select>
 <br>
-<input type="Button" value="Wy¶lij">
+<input type="Button" value="WyÂ¶lij">
 
 
 </form>
 
 </body>
 </html>
+
