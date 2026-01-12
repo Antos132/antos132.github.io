@@ -74,14 +74,15 @@ function BMI(){
 var skl1=parseFloat(document.BMI.Wzrost.value);
 var skl2=parseFloat(document.BMI.Waga.value);
 var wynik=skl2/(skl1*skl1);
+	alert(wynik)
 if(wynik<18.5){
-alert(wynik" niedowaga")
+alert(" niedowaga")
 }
 if(wynik>=18.5 && wynik<=24.9){
-	alert(wynik" prawidłowa masa ciała")
+	alert(" prawidłowa masa ciała")
 }
 if(wynik>=25){
-	alert(wynik" nadwaga")
+	alert(" nadwaga")
 }
 </script>
 <form name="BMI">
@@ -125,6 +126,7 @@ Wybierz przedmiot:<br>
 
 </body>
 </html>
+
 
 
 
