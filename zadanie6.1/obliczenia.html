@@ -18,7 +18,7 @@ alert(wynik);
 <form name="Form">
 a=<input type="Text" name="a"><br>
 b=<input type="Text" name="b"><br>
-<input type="Button" value="Oblicz sumê" onclick="dodawanie()">
+<input type="Button" value="Oblicz sumę" onclick="dodawanie()">
 </form>
 <hr>
 
@@ -38,7 +38,7 @@ alert(wynik);
 <form name="jakas_wymyslona_nazwa1">
 a=<input type="Text" name="jakas_wymyslona_nazwa2"><br>
 b=<input type="Text" name="jakas_wymyslona_nazwa3"><br>
-<input type="Button" value="Oblicz ró¿nicê" onclick="odejmowanie()">
+<input type="Button" value="Oblicz różnicę" onclick="odejmowanie()">
 </form>
 <hr>
 
@@ -56,7 +56,7 @@ alert(wynik);
 <form name="test">
 a=<input type="Text" name="a"><br>
 b=<input type="Text" name="b"><br>
-<input type="Button" value="Wymnó¿" onclick="mnozenie()">
+<input type="Button" value="Wymnóż" onclick="mnozenie()">
 </form>
 <hr>
 <script language="JavaScript">
@@ -71,8 +71,8 @@ alert(wynik);
 <hr>
 <script language="JavaScript">
 function BMI(){
-var skl1=parseFloat(document.BMI.Wzrost.value);
-var skl2=parseFloat(document.BMI.Waga.value);
+var skl1=parseFloat(document.BMI.a.value);
+var skl2=parseFloat(document.BMI.b.value);
 var wynik=skl2/(skl1*skl1);
 	alert(wynik)
 if(wynik<18.5){
@@ -86,8 +86,8 @@ if(wynik>=25){
 }
 </script>
 <form name="BMI">
-Wzrost=<input type="text" name="Wzrost"><br>
-Waga=<input type="text" name="Waga"><br>
+Wzrost=<input type="text" name="a"><br>
+Waga=<input type="text" name="b"><br>
 <input type="Button" value="Oblicz BMI" onclick="BMI()">
 </form>
 
@@ -103,14 +103,14 @@ Podaj imie: <input type="text" name="imie">
 Podaj has³o: <input type="password" name="has³o">
 <br>
 Podaj ulubione ppotrawy:<br>
-<input type="checkbox" name="potrawy" value="warto¶æ" checked>Kotlet schabowy <br>
-<input type="checkbox" name="potrawy" value="warto¶æ">Paprykarz <br>
-<input type="checkbox" name="potrawy" value="warto¶æ" checked>Kotlet mielony <br>
+<input type="checkbox" name="potrawy" value="wartość" checked>Kotlet schabowy <br>
+<input type="checkbox" name="potrawy" value="wartość">Paprykarz <br>
+<input type="checkbox" name="potrawy" value="wartość" checked>Kotlet mielony <br>
 <br>
 Wybierz kolor:<br>
-<input type="radio" name="kolory" value="warto¶æ">zielony <br>
-<input type="radio" name="kolory" value="warto¶æ">czerwony <br>
-<input type="radio" name="kolory" value="warto¶æ">czarny <br>
+<input type="radio" name="kolory" value="wartość">zielony <br>
+<input type="radio" name="kolory" value="wartość">czerwony <br>
+<input type="radio" name="kolory" value="wartość">czarny <br>
 <br>
 Wybierz przedmiot:<br>
 <select name="przedmioty">
@@ -126,6 +126,7 @@ Wybierz przedmiot:<br>
 
 </body>
 </html>
+
 
 
 
