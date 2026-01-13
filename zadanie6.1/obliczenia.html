@@ -69,26 +69,27 @@ alert(wynik);
 }
 </script>
 <hr>
-<script language="JavaScript">
-function oblicz_bmi(){
-var skl1=parseFloat(document.BMI.a.value);
-var skl2=parseFloat(document.BMI.b.value);
-var wynik=skl2/(skl1*skl1);
-alert(wynik);
-if(wynik<18.5){alert(" niedowaga")};
-if(wynik>=18.5 && wynik<=24.9){alert(" prawidłowa masa ciała")};
-if(wynik>=25){alert(" nadwaga")};
-</script>
-<form name="BMI">
-Wzrost=<input type="text" name="a"><br>
-Waga=<input type="text" name="b"><br>
-<input type="Button" value="Oblicz BMI" onclick="oblicz_bmi()">
-</form>
+
 
 <form name="adam">
 a=<input type="Text" name="a"><br>
 b=<input type="Text" name="b"><br>
 <input type="Button" value="Podziel" onclick="dziel()">
+</form>
+<hr>
+<script language="JavaScript">
+function oblicz_bmi(){
+var skl1=parseFloat(document.BMI.a.value);
+var skl2=parseFloat(document.BMI.b.value);
+var wynik=skl2/(skl1*skl1);
+if((wynik)<18.5){alert("niedowaga\n"+wynik)}
+if((wynik)>=18.5 && (wynik)<=24.9){alert("prawidłowa masa ciała\n"+wynik)}
+if((wynik)>=25){alert("nadwaga\n"+wynik)}
+</script>
+<form name="BMI">
+Wzrost=<input type="text" name="a"><br>
+Waga=<input type="text" name="b"><br>
+<input type="Button" value="Oblicz BMI" onclick="oblicz_bmi()">
 </form>
 <hr>
 <form>
@@ -120,6 +121,7 @@ Wybierz przedmiot:<br>
 
 </body>
 </html>
+
 
 
 
